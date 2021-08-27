@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    </style>
+
+    <script>
+
+        let a = {
+            nome: "Victor",
+            nota: 8.5
+        }
+
+        let b = JSON.stringify(a)
+
+        let a2 = JSON.parse(b)
+
+            console.log(a)
+            console.log(b)
+            console.log(a2)
+
+        let c1 = '{"nome": "Victor Rosa", "idade": 21}'
+        let c2 = JSON.parse(c1)
+            console.log(c1)
+            console.log(c2)
+
+            console.log(c1.nome)
+            console.log(c2.nome)
+            console.log(c2.idade)
+        
+    </script>
+</head>
+
+<body>
+    
+</body>
+
+</html>

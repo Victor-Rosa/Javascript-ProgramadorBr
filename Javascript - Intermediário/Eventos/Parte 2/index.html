@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    .botao{
+        text-align: center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgb(245, 47, 47);
+        color: white;
+        width: 70px;
+        box-shadow: 1px 1px 1px 0.5px black;
+        margin-top: 5px;
+        margin-left: 105px;
+    }
+
+    img{
+        width: 200px;
+    }
+
+    .p1{
+        text-align: center;
+        width: 200px;
+        background-color: red;
+        color: white;
+        font-size: 18px;
+    }
+
+</style>
+<body onload="console.log('Página totalmente carregada')">
+    <script src="script.js"></script>
+    
+    <img src="./image/ce7821106332203.5f8dc717673de(1).jpg" alt="">
+
+    <div onclick="click(this)" onmouseover="onOver(this)"
+    onmouseout="onOut(this)" class="botao">Click</div>
+
+    <p class="p1"  onmouseover="onOver(this)"
+    onmouseout="onOut(this)">texto para teste</p>
+
+</body>
+</html>

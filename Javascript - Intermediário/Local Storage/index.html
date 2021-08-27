@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+
+    <script>
+        //localStorage.setItem("nome", "Victor");
+
+        //let name = localStorage.getItem("nome");
+            //console.log(name)
+
+        //localStorage.removeItem()
+
+        onload = function (){
+            let nome = localStorage.getItem("nome")
+            let titulo = document.getElementById("nome")
+            titulo.innerHTML = nome
+
+        }
+
+
+        function atualizar(elemento){
+            let valor = elemento.value
+                console.log(valor)
+
+            let titulo = document.getElementById("nome")
+                titulo.innerHTML = valor    
+        }
+    </script>
+</head>
+<body>
+    <h1 id="nome"></h1>
+    <input type="text" oninput="atualizar(this)">
+</body>
+</html>

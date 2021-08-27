@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    window.onload = function(){
+
+        let d1 = document.getElementById("d1")
+
+        console.log(d1.children[0])
+        console.log(d1.children[0].children)
+
+
+    }
+
+    function f(e){
+        console.log("teste")
+        console.log(e)
+        console.log(this)
+        
+    }
+
+    function f1(e){
+        console.log("teste f1")
+        console.log(e)
+        console.log(e.target)
+        console.log(this)
+        
+    }
+
+    /*window.onload = function (){
+        let h1 = document.getElementsByTagName("h1")[0]
+
+        h1.addEventListener("click", f1)
+    }*/
+
+</script>
+<body>
+    <h1 onclick="f(this)">Titulo</h1>
+
+    <div id="d1"> <h2>ALGUMA COISA</h2> </div>
+    <br>
+   
+    <DIV id="div2"> <h3>alguma coisa 2</h3></DIV>
+
+</body>
+</html>
